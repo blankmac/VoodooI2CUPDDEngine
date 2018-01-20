@@ -16,11 +16,11 @@
 #include <IOKit/IOTimerEventSource.h>
 #include <IOKit/IOWorkLoop.h>
 
-#include "MultitouchHelpers.hpp"
+#include "Headers/MultitouchHelpers.hpp"
 #include "VoodooI2CUPDDData.h"
-#include "VoodooI2CDigitiserStylus.hpp"
-#include "VoodooI2CMultitouchEngine.hpp"
-#include "VoodooI2CMultitouchInterface.hpp"
+#include "Headers/VoodooI2CDigitiserStylus.hpp"
+#include "Headers/VoodooI2CMultitouchEngine.hpp"
+#include "Headers/VoodooI2CMultitouchInterface.hpp"
 #include "VoodooI2CUPDDGestureSocket.hpp"
 
 
