@@ -38,12 +38,12 @@ MultitouchReturn VoodooI2CUPDDEngine::handleInterruptReport(VoodooI2CMultitouchE
     
     for (i=0; i < event.contact_count+1; i++) {
         VoodooI2CDigitiserTransducer* transducer = OSDynamicCast(VoodooI2CDigitiserTransducer, event.transducers->getObject(i));
+        if (!transducer)
+            continue;
         if (transducer->type==kDigitiserTransducerStylus) {
             i_offset = 1;
             continue;
         }
-        if (!transducer)
-            continue;
         finger_data.logical_x = transducer->logical_max_x;
         finger_data.logical_y = transducer->logical_max_y;
         
