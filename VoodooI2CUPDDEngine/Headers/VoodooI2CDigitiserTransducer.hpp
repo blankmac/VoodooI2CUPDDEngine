@@ -117,7 +117,7 @@ class VoodooI2CDigitiserTransducer : public OSObject {
     UInt32 event_mask;
     AbsoluteTime timestamp;
 
-    void           free();
+    void           free() override;
     bool serialize(OSSerialize* serializer);
 
     /* Instantiates a new transducer
